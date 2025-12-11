@@ -1,24 +1,20 @@
-# main.py
+# product.py
 
-def format_product(product_id, name, quantity, price):
-    """
-    Accepts product details and returns a well-formatted string.
-    """
-
-    return (
-        f"Product ID   : {product_id}\n"
-        f"Name         : {name}\n"
-        f"Quantity     : {quantity}\n"
-        f"Price        : ₹{price}"
+def product_details(product_id, name, quantity, price):
+    result = (
+        f"Product ID: {product_id}\n"
+        f"Product Name: {name}\n"
+        f"Quantity: {quantity}\n"
+        f"Price: {price}"
     )
+    return result
 
 
-# Example usage
-if __name__ == "__main__":
-    pid = input("Enter Product ID: ")
-    name = input("Enter Product Name: ")
-    qty = int(input("Enter Quantity: "))
-    price = float(input("Enter Price: "))
+if _name_ == "_main_":
+    # Sample input
+    product_id = "P101"
+    name = "Laptop"
+    quantity = 5
+    price = 55000
 
-    print("\n--- Product Details ---")
-    print(format_product(pid, name, qty, price))
+    print(product_details(product_id, name, quantity, price))
