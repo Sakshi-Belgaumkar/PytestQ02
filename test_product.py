@@ -12,4 +12,4 @@ def test_format_product():
         "Price        : ₹45.5"
     )
 
-    assert product("P101", "Notebook", 5, 45.5) == expected_output
+    assert product_details("P101", "Notebook", 5, 45.5) == expected_output
